@@ -8,9 +8,8 @@ class App < Sinatra::Base
   end
   
   post '/piglatinize' do
-    # binding.pry
-    # user_text = params[:user_phrase]
     x = PigLatinizer.new
+      # create an instance of PigLatinizer, so we can call instance method on it
     @latinized_word = x.piglatinize(params[:user_phrase])
     
     erb :new_string
