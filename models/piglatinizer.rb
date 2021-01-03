@@ -1,9 +1,9 @@
 class PigLatinizer
   attr_reader :text
   
-  def initialize
-    @text = text  
-  end
+  # def initialize
+  #   @text = text  
+  # end
   
   def piglatinize(string)
     a = string.split(" ")
